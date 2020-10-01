@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\Goldbadge\Challenges\01_CafeChallenge\02_Claim\bin\Debug\02_Claim.dll
+C:\ElevenFiftyProjects\Goldbadge\Challenges\01_CafeChallenge\02_Claim\bin\Debug\02_Claim.pdb
+C:\ElevenFiftyProjects\Goldbadge\Challenges\01_CafeChallenge\02_Claim\obj\Debug\02_Claim_Repository.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\Goldbadge\Challenges\01_CafeChallenge\02_Claim\obj\Debug\02_Claim_Repository.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\Goldbadge\Challenges\01_CafeChallenge\02_Claim\obj\Debug\02_Claim.dll
+C:\ElevenFiftyProjects\Goldbadge\Challenges\01_CafeChallenge\02_Claim\obj\Debug\02_Claim.pdb
