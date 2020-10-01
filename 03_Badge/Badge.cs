@@ -8,17 +8,17 @@ namespace _03_Badge
 {
     public class Badge
     {
-        public string BadgeID { get; set; }
-        //public List<string> DoorNames { get; set; }
-        public string DoorAccess { get; set; }
+        public int BadgeID { get; set; }
+        public List<string> DoorNames { get; set; }
+        //public string DoorAccess { get; set; }
 
         public Badge() { }
-        //public Badge(string badgeID, List<string> doorNames)
-        public Badge(string badgeID, string doorAccess)
+        public Badge(int badgeID, List<string> doorNames)
+        //public Badge(string badgeID, string doorAccess)
         {
             BadgeID = badgeID;
-            DoorAccess = doorAccess;
-            //DoorNames = doorNames;
+            //DoorAccess = doorAccess;
+            DoorNames = doorNames;
         }
     }
 
