@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace _03_Badge_Tests
 {
+
     [TestClass]
     public class BadgeRepositoryTests
 
@@ -38,7 +39,7 @@ namespace _03_Badge_Tests
         private BadgeRepository _repo;
 
         [TestInitialize]
-        
+
         public void arrange()
         {
             _repo = new BadgeRepository();

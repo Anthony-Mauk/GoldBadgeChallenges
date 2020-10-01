@@ -28,9 +28,9 @@ namespace _03_Badge
         //Get Badge by ID
         public Badge GetBadgeByID(string id)
         {
-            foreach(Badge singleBadge in _badgeList)
+            foreach (Badge singleBadge in _badgeList)
             {
-                if(singleBadge.BadgeID.ToLower() == id.ToLower())
+                if (singleBadge.BadgeID.ToLower() == id.ToLower())
                 {
                     return singleBadge;
                 }
@@ -40,7 +40,7 @@ namespace _03_Badge
         public bool UpdateExistingBadge(string originalBadge, Badge newBadge)
         {
             Badge oldbadge = GetBadgeByID(originalBadge);
-            if(oldbadge != null)
+            if (oldbadge != null)
             {
                 oldbadge.BadgeID = newBadge.BadgeID;
                 oldbadge.DoorAccess = newBadge.DoorAccess;

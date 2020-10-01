@@ -92,7 +92,7 @@ namespace _02_Claim_Console
             DateTime claimDate;
             Console.WriteLine("Enter date of claim in format MM/DD/YYYY: ");
             //accepts date in MM/dd/yyyy format
-            
+
             claimDate = DateTime.Parse(Console.ReadLine());
             claim.DateOfClaim = claimDate;
             bool claimIsValid = true;
@@ -102,7 +102,7 @@ namespace _02_Claim_Console
             //System.TimeSpan diff1 = secondDate - firstDate;
             /*TimeSpan*/
             double difference = (claimDate - incidentDate).TotalDays;
-            
+
             if (difference > 30)
             {
                 claimIsValid = false;
@@ -117,9 +117,20 @@ namespace _02_Claim_Console
             //get claims from db
             List<KClaim> listOfClaims = _claimRepo.GetClaims();
             //display each item property values
+            string whatever;
+            whatever = "0----5---10---15----20---25---30---35---40---45---50---55---60---65---70" + "\n";
+
+            Console.WriteLine
+                ("{0,-7} {1,-5} {2, -25} {3, 10} {4,-15} {5,-15} {6,-10} ",
+                "ClaimID", "Type", "Description", "Amount", "DateOfAccident", "DateOfClaim", "IsValid");
+            //Console.WriteLine(whatever);
             foreach (KClaim claim in listOfClaims)
             {
-                DisplaySimple(claim);
+                //DisplaySimple(claim);
+
+                Console.WriteLine("{0,-7} {1,-5} {2, -25} {3, 10:C} {4,-15:d} {5,-15:d} {6,-10} ",
+                    claim.ClaimID, claim.TypeOfClaim, claim.ClaimDesription,
+                    claim.ClaimAmount, claim.DateOfIncident, claim.DateOfClaim, claim.IsValid);
             }
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
