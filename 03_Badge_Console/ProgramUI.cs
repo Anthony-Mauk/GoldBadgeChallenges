@@ -46,7 +46,7 @@ namespace _03_Badge_Console
                         continueToRun = false;
                         break;
                     default:
-                        Console.WriteLine("Please enter a valid number between 1 and 5. \n" +
+                        Console.WriteLine("Please enter a valid number between 1 and 4. \n" +
                             "Press any key to continue......");
                         Console.ReadKey();
                         break;
