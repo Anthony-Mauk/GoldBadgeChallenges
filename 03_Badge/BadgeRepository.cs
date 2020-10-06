@@ -88,7 +88,6 @@ namespace _03_Badge
             if (_dictionary.ContainsKey(badgeIDInput))
             {
 
-                //parts.Contains(new Part { PartId = 1734, PartName = "" }));
                 foreach (var value in _dictionary)
                 {
                     if (value.Key == badgeIDInput)
@@ -124,7 +123,8 @@ namespace _03_Badge
 
                     }
 
-                    Console.WriteLine($"Door:" + "{}" + "has access to" + "{}");
+                    // Console.WriteLine($"Door:" + "{}" + "has access to" + "{}");
+                    Console.WriteLine("press any key to continue");
                     Console.ReadKey();
                 }
                 else if (response == "2")
@@ -139,14 +139,16 @@ namespace _03_Badge
                         {
                             List<string> doors = _dictionary[badgeIDInput];
                             doors.Add(doorToAdd);
+                            //change to int before adding to dictionary
+                           // _dictionary.Add(doors, doorToAdd);
                         }
 
                     }
-                    Console.WriteLine($"Door:" + "{}" + "has access to" + "{}");
-                    Console.ReadKey();
+                    //Console.WriteLine($"Door:" + "{}" + "has access to" + "{}");
+                    //Console.ReadKey();
 
-                    Console.WriteLine("Add the door to the current list");
-                    Console.ReadKey();
+                   //Console.WriteLine("Add the door to the current list");
+                    //Console.ReadKey();
                 }
                 else
                 {
